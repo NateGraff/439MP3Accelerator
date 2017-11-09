@@ -1,0 +1,5 @@
+# Ignore Vivado Project in general
+MP3Accelerator/*
+
+# Add Back Vivado Project Files
+!MP3Accelerator/MP3Accelerator.xpr
