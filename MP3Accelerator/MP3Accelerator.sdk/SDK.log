@@ -1,0 +1,326 @@
+08:57:42 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\temp_xsdb_launch_script.tcl
+08:57:49 INFO  : XSDB server has started successfully.
+08:57:54 INFO  : Processing command line option -hwspec C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper.hdf.
+09:05:54 INFO  : System reset is completed.
+09:06:49 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/Documents/Vivado/lab4/lab4.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:06:51 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+09:07:11 INFO  : System reset is completed.
+09:08:07 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/Documents/Vivado/lab4/lab4.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:08:08 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+09:09:58 INFO  : System reset is completed.
+09:10:51 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/Documents/Vivado/lab4/lab4.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:10:51 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Elf file associated with target
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+09:12:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:12:21 INFO  : Jtag cable 'Digilent Zybo 210279654914A' is selected.
+09:12:21 INFO  : 'jtag frequency' command is executed.
+09:12:21 INFO  : Sourcing of 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:12:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:12:22 INFO  : System reset is completed.
+09:12:25 INFO  : 'after 3000' command is executed.
+09:12:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1' command is executed.
+09:12:27 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:12:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:12:28 INFO  : Hardware design information is loaded from 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:12:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:12:29 INFO  : 'ps7_init' command is executed.
+09:12:29 INFO  : 'ps7_post_config' command is executed.
+09:12:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:12:29 INFO  : The application 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:12:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1
+fpga -file C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+loadhw C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+dow C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf
+----------------End of Script----------------
+
+09:12:29 INFO  : Memory regions updated for context APU
+09:12:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:12:30 INFO  : 'con' command is executed.
+09:12:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+con
+----------------End of Script----------------
+
+09:12:30 INFO  : Launch script is exported to file 'C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\mp3accelerator.tcl'
+09:13:09 INFO  : Disconnected from the channel tcfchan#1.
+09:13:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:13:11 INFO  : Jtag cable 'Digilent Zybo 210279654914A' is selected.
+09:13:11 INFO  : 'jtag frequency' command is executed.
+09:13:11 INFO  : Sourcing of 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:13:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:13:11 INFO  : System reset is completed.
+09:13:14 INFO  : 'after 3000' command is executed.
+09:13:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1' command is executed.
+09:13:16 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:13:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:13:21 INFO  : Hardware design information is loaded from 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:13:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:13:22 INFO  : 'ps7_init' command is executed.
+09:13:22 INFO  : 'ps7_post_config' command is executed.
+09:13:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:22 INFO  : The application 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:13:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1
+fpga -file C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+loadhw C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+dow C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf
+----------------End of Script----------------
+
+09:13:22 INFO  : Memory regions updated for context APU
+09:13:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:22 INFO  : 'con' command is executed.
+09:13:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+con
+----------------End of Script----------------
+
+09:13:22 INFO  : Launch script is exported to file 'C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\mp3accelerator.tcl'
+09:13:48 INFO  : Disconnected from the channel tcfchan#2.
+09:13:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:13:50 INFO  : Jtag cable 'Digilent Zybo 210279654914A' is selected.
+09:13:50 INFO  : 'jtag frequency' command is executed.
+09:13:50 INFO  : Sourcing of 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:13:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:13:50 INFO  : System reset is completed.
+09:13:53 INFO  : 'after 3000' command is executed.
+09:13:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1' command is executed.
+09:13:55 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:13:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:13:58 INFO  : Hardware design information is loaded from 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:13:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:13:59 INFO  : 'ps7_init' command is executed.
+09:13:59 INFO  : 'ps7_post_config' command is executed.
+09:13:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:59 INFO  : The application 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:13:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1
+fpga -file C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+loadhw C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+dow C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf
+----------------End of Script----------------
+
+09:13:59 INFO  : Memory regions updated for context APU
+09:13:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:13:59 INFO  : 'con' command is executed.
+09:13:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+con
+----------------End of Script----------------
+
+09:13:59 INFO  : Launch script is exported to file 'C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\mp3accelerator.tcl'
+09:15:18 INFO  : Disconnected from the channel tcfchan#3.
+09:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:15:21 INFO  : Jtag cable 'Digilent Zybo 210279654914A' is selected.
+09:15:21 INFO  : 'jtag frequency' command is executed.
+09:15:21 INFO  : Sourcing of 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:15:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:15:21 INFO  : System reset is completed.
+09:15:24 INFO  : 'after 3000' command is executed.
+09:15:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1' command is executed.
+09:15:26 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:15:27 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:15:31 INFO  : Hardware design information is loaded from 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:15:31 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:15:32 INFO  : 'ps7_init' command is executed.
+09:15:32 INFO  : 'ps7_post_config' command is executed.
+09:15:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:15:32 INFO  : The application 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:15:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1
+fpga -file C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+loadhw C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+dow C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf
+----------------End of Script----------------
+
+09:15:32 INFO  : Memory regions updated for context APU
+09:15:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:15:33 INFO  : 'con' command is executed.
+09:15:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+con
+----------------End of Script----------------
+
+09:15:33 INFO  : Launch script is exported to file 'C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\mp3accelerator.tcl'
+09:16:26 INFO  : Disconnected from the channel tcfchan#4.
+09:23:31 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:39:23 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\temp_xsdb_launch_script.tcl
+09:39:36 INFO  : XSDB server has started successfully.
+09:40:04 INFO  : Processing command line option -hwspec C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper.hdf.
+09:40:13 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+09:53:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:08 INFO  : Jtag cable 'Digilent Zybo 210279654914A' is selected.
+09:53:08 INFO  : 'jtag frequency' command is executed.
+09:53:08 INFO  : Sourcing of 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:53:08 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:53:08 INFO  : System reset is completed.
+09:53:11 INFO  : 'after 3000' command is executed.
+09:53:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1' command is executed.
+09:53:14 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:53:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:53:15 INFO  : Hardware design information is loaded from 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:53:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+09:53:16 INFO  : 'ps7_init' command is executed.
+09:53:17 INFO  : 'ps7_post_config' command is executed.
+09:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:17 INFO  : The application 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:53:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1
+fpga -file C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+loadhw C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+dow C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf
+----------------End of Script----------------
+
+09:53:18 INFO  : Memory regions updated for context APU
+09:53:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:53:18 INFO  : 'con' command is executed.
+09:53:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+con
+----------------End of Script----------------
+
+09:53:18 INFO  : Launch script is exported to file 'C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\new_configuration.tcl'
+09:53:55 INFO  : Disconnected from the channel tcfchan#1.
+10:04:26 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\temp_xsdb_launch_script.tcl
+10:04:30 INFO  : XSDB server has started successfully.
+10:04:34 INFO  : Processing command line option -hwspec C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper.hdf.
+10:04:34 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:05:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:06:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:12 INFO  : Jtag cable 'Digilent Zybo 210279654914A' is selected.
+10:06:12 INFO  : 'jtag frequency' command is executed.
+10:06:12 INFO  : Sourcing of 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:06:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+10:06:12 INFO  : System reset is completed.
+10:06:15 INFO  : 'after 3000' command is executed.
+10:06:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1' command is executed.
+10:06:18 INFO  : FPGA configured successfully with bitstream "C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:06:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+10:06:19 INFO  : Hardware design information is loaded from 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:06:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0' command is executed.
+10:06:20 INFO  : 'ps7_init' command is executed.
+10:06:20 INFO  : 'ps7_post_config' command is executed.
+10:06:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:22 INFO  : The application 'C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:06:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279654914A" && level==0} -index 1
+fpga -file C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+loadhw C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+dow C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/MP3Accelerator/Debug/MP3Accelerator.elf
+----------------End of Script----------------
+
+10:06:22 INFO  : Memory regions updated for context APU
+10:06:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:06:22 INFO  : 'con' command is executed.
+10:06:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279654914A"} -index 0
+con
+----------------End of Script----------------
+
+10:06:22 INFO  : Launch script is exported to file 'C:\Users\nate\439MP3Accelerator\MP3Accelerator\MP3Accelerator.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\mp3accelerator_debug.tcl'
+10:06:55 INFO  : Disconnected from the channel tcfchan#1.
