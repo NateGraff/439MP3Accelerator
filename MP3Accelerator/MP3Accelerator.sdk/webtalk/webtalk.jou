@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Webtalk v2016.2 (64-bit)
-# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # 
-# Start of session at: Thu Nov 16 09:23:26 2017
-# Process ID: 6724
-# Current directory: C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/webtalk
+# Start of session at: Tue Nov 28 09:14:01 2017
+# Process ID: 8208
+# Current directory: C:/Xilinx/projects/CPE439/MP3Project/MP3Accelerator/MP3Accelerator.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/webtalk/webtalk.log
-# Journal file: C:/Users/nate/439MP3Accelerator/MP3Accelerator/MP3Accelerator.sdk/webtalk\webtalk.jou
+# Log file: C:/Xilinx/projects/CPE439/MP3Project/MP3Accelerator/MP3Accelerator.sdk/webtalk/webtalk.log
+# Journal file: C:/Xilinx/projects/CPE439/MP3Project/MP3Accelerator/MP3Accelerator.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

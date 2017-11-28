@@ -8,9 +8,8 @@
 #include "FreeRTOS/FreeRTOS.h"
 #include "FreeRTOS/task.h"
 #include "FreeRTOS/semphr.h"
-
+#include "SD/mp3FromSD.h"
 #include <limits.h>
-
 #define CODEC_ADDR 0b00011010
 #define IIC_SCLK_RATE 100000
 
@@ -24,12 +23,20 @@ void vApplicationTickHook(void);
 
 XScuWdt xWatchDogInstance;
 XScuGic xInterruptController;
-
+static char fileName[32] = "test2.mp3";
+char printMeme[4000000];
 void sample_task(void *params)
 {
     for (;;) {
+    	FRESULT Res = 1; // init to fail
+    	UINT fileSize = 0;
     	xil_printf("Hello, world!\r\n");
     	vTaskDelay(1000);
+    	Res = mp3Read((char*)fileName,printMeme, &fileSize);
+    	vTaskDelay(1000);
+    	if( !Res ){
+    		xil_printf(printMeme);
+    	}
     }
 }
 
