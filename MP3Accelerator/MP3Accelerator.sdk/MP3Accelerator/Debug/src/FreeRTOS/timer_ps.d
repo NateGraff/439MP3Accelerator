@@ -9,11 +9,11 @@ src/FreeRTOS/timer_ps.o src/FreeRTOS/timer_ps.o: \
  ../../standalone_bsp_2/ps7_cortexa9_0/include/xil_assert.h \
  ../../standalone_bsp_2/ps7_cortexa9_0/include/xscutimer_hw.h \
  ../../standalone_bsp_2/ps7_cortexa9_0/include/xil_io.h \
+ ../../standalone_bsp_2/ps7_cortexa9_0/include/xil_printf.h \
+ ../../standalone_bsp_2/ps7_cortexa9_0/include/xparameters.h \
  ../../standalone_bsp_2/ps7_cortexa9_0/include/xpseudo_asm.h \
  ../../standalone_bsp_2/ps7_cortexa9_0/include/xreg_cortexa9.h \
- ../../standalone_bsp_2/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
- ../../standalone_bsp_2/ps7_cortexa9_0/include/xil_printf.h \
- ../../standalone_bsp_2/ps7_cortexa9_0/include/xparameters.h
+ ../../standalone_bsp_2/ps7_cortexa9_0/include/xpseudo_asm_gcc.h
 
 ../src/FreeRTOS/timer_ps.h:
 
@@ -35,12 +35,12 @@ src/FreeRTOS/timer_ps.o src/FreeRTOS/timer_ps.o: \
 
 ../../standalone_bsp_2/ps7_cortexa9_0/include/xil_io.h:
 
+../../standalone_bsp_2/ps7_cortexa9_0/include/xil_printf.h:
+
+../../standalone_bsp_2/ps7_cortexa9_0/include/xparameters.h:
+
 ../../standalone_bsp_2/ps7_cortexa9_0/include/xpseudo_asm.h:
 
 ../../standalone_bsp_2/ps7_cortexa9_0/include/xreg_cortexa9.h:
 
 ../../standalone_bsp_2/ps7_cortexa9_0/include/xpseudo_asm_gcc.h:
-
-../../standalone_bsp_2/ps7_cortexa9_0/include/xil_printf.h:
-
-../../standalone_bsp_2/ps7_cortexa9_0/include/xparameters.h:

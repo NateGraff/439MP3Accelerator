@@ -18,6 +18,11 @@ ELFSIZE :=
 SUBDIRS := \
 src/FreeRTOS \
 src/SD \
+src/audioOut/audio \
+src/audioOut/dma \
+src/audioOut/iic \
+src/audioOut/intc \
+src/audioOut/userio \
 src/libmad \
 src \
 
