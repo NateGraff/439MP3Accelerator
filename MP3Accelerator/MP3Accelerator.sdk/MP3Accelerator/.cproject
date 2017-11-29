@@ -74,15 +74,16 @@
 					</folderInfo>
 					<folderInfo id="xilinx.gnu.armv7.exe.debug.1623833370.1716909072" name="/" resourcePath="src">
 						<toolChain id="xilinx.gnu.armv7.exe.debug.toolchain.1311913497" name="Xilinx ARM v7 GNU Toolchain" superClass="xilinx.gnu.armv7.exe.debug.toolchain" unusedChildren="">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.target.gnu.base.debug" isAbstract="false" name="Debug Platform" superClass="xilinx.armv7.target.gnu.base.debug"/>
 							<tool id="xilinx.gnu.armv7.c.toolchain.assembler.debug.1189064648" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.debug.463309186">
 								<inputType id="xilinx.gnu.assembler.input.672992703" superClass="xilinx.gnu.assembler.input"/>
 							</tool>
 							<tool id="xilinx.gnu.armv7.c.toolchain.compiler.debug.445936913" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.debug.1639838285">
-								<option id="xilinx.gnu.compiler.dircategory.includes.556193715" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+								<option id="xilinx.gnu.compiler.dircategory.includes.556193715" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../standalone_bsp_2/ps7_cortexa9_0/include"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MP3Accelerator/src/SD}&quot;"/>
 								</option>
-								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1881689033" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath"/>
+								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1881689033" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
 								<inputType id="xilinx.gnu.armv7.c.compiler.input.1387036151" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
 							</tool>
 							<tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.debug.1570965706" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.debug.1333019479"/>

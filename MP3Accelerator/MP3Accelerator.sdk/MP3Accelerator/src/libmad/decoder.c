@@ -236,7 +236,7 @@ enum mad_flow receive(int fd, void **message, unsigned int *size)
 
     if (*size > 0) {
       if (*message == 0) {
-	*message = malloc(*size);
+	*message = pvPortMalloc(*size);
 	if (*message == 0)
 	  return MAD_FLOW_BREAK;
       }
@@ -550,13 +550,15 @@ int mad_decoder_run(struct mad_decoder *decoder, enum mad_decoder_mode mode)
   if (run == 0)
     return -1;
 
-  decoder->sync = malloc(sizeof(*decoder->sync));
-  if (decoder->sync == 0)
-    return -1;
-
+  decoder->sync = pvPortMalloc(sizeof(*decoder->sync));
+  if (decoder->sync == 0) {
+	  xil_printf("Failed to allocate decoder->sync\r\n");
+	  return -1;
+  }
+\
   result = run(decoder);
 
-  free(decoder->sync);
+  vPortFree(decoder->sync);
   decoder->sync = 0;
 
   return result;

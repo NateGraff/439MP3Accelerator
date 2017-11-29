@@ -8,7 +8,11 @@
 #include "FreeRTOS/FreeRTOS.h"
 #include "FreeRTOS/task.h"
 #include "FreeRTOS/semphr.h"
+
 #include "SD/mp3FromSD.h"
+
+#include "libmad/mad.h"
+
 #include <limits.h>
 #define CODEC_ADDR 0b00011010
 #define IIC_SCLK_RATE 100000
@@ -23,20 +27,149 @@ void vApplicationTickHook(void);
 
 XScuWdt xWatchDogInstance;
 XScuGic xInterruptController;
+
 static char fileName[32] = "test2.mp3";
-char printMeme[4000000];
+uint8_t printMeme[4000000];
+
+/*
+ * libmad callbacks
+ */
+
+struct buffer {
+  unsigned char const *start;
+  unsigned long length;
+};
+
+static inline
+signed int scale(mad_fixed_t sample)
+{
+  /* round */
+  sample += (1L << (MAD_F_FRACBITS - 16));
+
+  /* clip */
+  if (sample >= MAD_F_ONE)
+    sample = MAD_F_ONE - 1;
+  else if (sample < -MAD_F_ONE)
+    sample = -MAD_F_ONE;
+
+  /* quantize */
+  return sample >> (MAD_F_FRACBITS + 1 - 16);
+}
+
+static
+enum mad_flow input(void *data,
+		    struct mad_stream *stream)
+{
+  struct buffer *buffer = data;
+
+  if (!buffer->length)
+    return MAD_FLOW_STOP;
+
+  mad_stream_buffer(stream, buffer->start, buffer->length);
+
+  buffer->length = 0;
+
+  return MAD_FLOW_CONTINUE;
+}
+
+static
+enum mad_flow output(void *data,
+		     struct mad_header const *header,
+		     struct mad_pcm *pcm)
+{
+  unsigned int nchannels, nsamples;
+  mad_fixed_t const *left_ch, *right_ch;
+
+  /* pcm->samplerate contains the sampling frequency */
+
+  nchannels = pcm->channels;
+  nsamples  = pcm->length;
+  left_ch   = pcm->samples[0];
+  right_ch  = pcm->samples[1];
+
+  while (nsamples--) {
+    signed int sample;
+
+    /* output sample(s) in 16-bit signed little-endian PCM */
+
+    sample = scale(*left_ch++);
+
+    // TODO: output audio somewhere
+
+/*    putchar((sample >> 0) & 0xff);
+    putchar((sample >> 8) & 0xff);
+
+    if (nchannels == 2) {
+      sample = scale(*right_ch++);
+      putchar((sample >> 0) & 0xff);
+      putchar((sample >> 8) & 0xff);
+    }
+*/
+  }
+
+  return MAD_FLOW_CONTINUE;
+}
+
+static
+enum mad_flow error(void *data,
+		    struct mad_stream *stream,
+		    struct mad_frame *frame)
+{
+  /* return MAD_FLOW_BREAK here to stop decoding (and propagate an error) */
+
+  return MAD_FLOW_CONTINUE;
+}
+
 void sample_task(void *params)
 {
+	/*
+	 * Read in MP3
+	 */
+	FRESULT Res = 1; // init to fail
+	UINT fileSize = 0;
+
+	Res = mp3Read((char*)fileName,printMeme, &fileSize);
+	if( !Res ){
+		// Init MP3 Decoding
+
+		struct buffer buffer;
+		struct mad_decoder decoder;
+		int result;
+
+		/* initialize our private message structure */
+
+		buffer.start  = printMeme;
+		buffer.length = fileSize;
+
+		xil_printf("Reading mp3 file with size %d\r\n", fileSize);
+
+		/* configure input, output, and error functions */
+
+		xil_printf("Initializing decoder\r\n");
+
+		mad_decoder_init(&decoder, &buffer,
+				input, 0 /* header */, 0 /* filter */, output,
+				error, 0 /* message */);
+
+		/* start decoding */
+
+		xil_printf("Starting decoder\r\n");
+
+		result = mad_decoder_run(&decoder, MAD_DECODER_MODE_SYNC);
+		if(result == -1) {
+			xil_printf("ERROR mad_decoder_run returned -1\r\n");
+		}
+
+		/* release the decoder */
+
+		xil_printf("Releasing decoder\r\n");
+
+		mad_decoder_finish(&decoder);
+	}
+
     for (;;) {
-    	FRESULT Res = 1; // init to fail
-    	UINT fileSize = 0;
-    	xil_printf("Hello, world!\r\n");
+    	xil_printf("MP3Accelerator Idle\r\n");
     	vTaskDelay(1000);
-    	Res = mp3Read((char*)fileName,printMeme, &fileSize);
-    	vTaskDelay(1000);
-    	if( !Res ){
-    		xil_printf(printMeme);
-    	}
     }
 }
 
