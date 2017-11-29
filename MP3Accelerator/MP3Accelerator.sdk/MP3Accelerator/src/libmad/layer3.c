@@ -2527,7 +2527,7 @@ int mad_layer_III(struct mad_stream *stream, struct mad_frame *frame)
   /* allocate Layer III dynamic structures */
 
   if (stream->main_data == 0) {
-    stream->main_data = malloc(MAD_BUFFER_MDLEN);
+    stream->main_data = pvPortMalloc(MAD_BUFFER_MDLEN);
     if (stream->main_data == 0) {
       stream->error = MAD_ERROR_NOMEM;
       return -1;
@@ -2535,7 +2535,7 @@ int mad_layer_III(struct mad_stream *stream, struct mad_frame *frame)
   }
 
   if (frame->overlap == 0) {
-    frame->overlap = calloc(2 * 32 * 18, sizeof(mad_fixed_t));
+    frame->overlap = pvPortMalloc(2 * 32 * 18, sizeof(mad_fixed_t));
     if (frame->overlap == 0) {
       stream->error = MAD_ERROR_NOMEM;
       return -1;
