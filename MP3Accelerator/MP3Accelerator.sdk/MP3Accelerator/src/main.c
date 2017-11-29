@@ -28,7 +28,7 @@ void vApplicationTickHook(void);
 XScuWdt xWatchDogInstance;
 XScuGic xInterruptController;
 
-static char fileName[32] = "test2.mp3";
+static char fileName[32] = "thehit.mp3";
 uint8_t printMeme[4000000];
 
 /*
@@ -181,7 +181,7 @@ void RunTasks()
      */
     xTaskCreate (sample_task,                        /* The function that implements the task. */
                 "Sample",                        /* The text name assigned to the task - for debug only as it is not used by the kernel. */
-                configMINIMAL_STACK_SIZE,            /* The size of the stack to allocate to the task. */
+                100000,            /* The size of the stack to allocate to the task. */
                 NULL,                                /* The parameter passed to the task - not used in this case. */
                 1,                                   /* The priority assigned to the task. */
                 NULL);                              /* The task handle is not required, so NULL is passed. */
@@ -194,7 +194,8 @@ void RunTasks()
 
 int main(void)
 {
-    prvSetupHardware();
+
+	prvSetupHardware();
 
     RunTasks();
 
